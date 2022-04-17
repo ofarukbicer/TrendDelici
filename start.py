@@ -5,7 +5,7 @@ from time import sleep
 def main():
     balance = kopeechka.get_balance()
 
-    if balance == 0:
+    if int(balance) == 0:
         base.error("[!] Your balance is 0")
         return
     if balance == None:
