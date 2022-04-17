@@ -20,8 +20,8 @@ class KopeechkaService():
 				data = response.json()
 				if data['status'] == 'OK':
 					return data["balance"]
-				return KopeechkaServiceException(f'KopeechkaServiceException: Failed to receive balance')
-			return KopeechkaServiceException(f'KopeechkaServiceException: Kopeechka API not responding\n Status Code: {response.status_code} -> {response.text or response.content}')
+				return None
+			return None
 		except Exception as e:
 			tb = sys.exc_info()[2]
 			raise KopeechkaServiceException(f'KopeechkaServiceException: get_balance() -> {e}').with_traceback(tb)

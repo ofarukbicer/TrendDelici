@@ -4,6 +4,13 @@ from time import sleep
 
 def main():
     balance = kopeechka.get_balance()
+
+    if balance == 0:
+        base.error("[!] Your balance is 0")
+        return
+    if balance == None:
+        base.error("[!] Kopeechka API is not responding")
+        return
     
     base.info(f"[blue]Kopeechka : [/][purple]{balance} RUB [/][blue](estimated {int(balance / 0.2)} mail)[/] | [blue]Proxy : [/][purple]{SETTINGS['proxy']}[/] | [blue]Account Password : [/][purple]{SETTINGS['default_password']}[/]", False)
     
