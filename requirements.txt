@@ -3,3 +3,6 @@ requests[socks]
 tinydb
 Faker
 parsel
+pyfiglet
+rich
+pytz
