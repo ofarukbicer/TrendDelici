@@ -1,0 +1,1 @@
+# Bi ara yapmayı düşünüyorum

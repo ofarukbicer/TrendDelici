@@ -1,0 +1,6 @@
+{
+  "proxy": false,
+  "default_password": "12345678aA",
+  "kopeechka": "YOUR_KOPEECHKA_API_KEY",
+  "proxies": [""]
+}
